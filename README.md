@@ -1,6 +1,6 @@
 # flutter_application_modul1
 
-A new Flutter project.
+Penugasan Matakuliah Mobile Programing STI202303728
 
 ## Getting Started
 
