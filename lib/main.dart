@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'widgets/hello_world.dart';
 import 'widgets/layouts.dart';
 import 'widgets/stateless_stateful.dart';
-import 'widgets/forms.dart';
 import 'widgets/helpers.dart';
-import 'widgets/product_list.dart';
+import 'widgets/daftar_produk.dart';
 
 void main() {
   runApp(const MyApp());
@@ -35,7 +34,7 @@ class HomePage extends StatelessWidget {
         children: [
           ListTile(
             title: const Text('Produk (ListView & Detail)'),
-            onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const ProductListPage())),
+            onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const HalamanDaftarProduk())),
           ),
           ListTile(
             title: const Text('Hello World'),
@@ -52,10 +51,6 @@ class HomePage extends StatelessWidget {
           ListTile(
             title: const Text('Stateful Counter'),
             onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const StatefulExample())),
-          ),
-          ListTile(
-            title: const Text('Cotoh Forms'),
-            onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const FormsPage())),
           ),
           const Divider(),
           Padding(
