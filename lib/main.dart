@@ -4,6 +4,7 @@ import 'widgets/layouts.dart';
 import 'widgets/stateless_stateful.dart';
 import 'widgets/forms.dart';
 import 'widgets/helpers.dart';
+import 'widgets/product_list.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,6 +33,10 @@ class HomePage extends StatelessWidget {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
+          ListTile(
+            title: const Text('Produk (ListView & Detail)'),
+            onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const ProductListPage())),
+          ),
           ListTile(
             title: const Text('Hello World'),
             onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (_) => const HelloWorldPage())),
